@@ -25,21 +25,32 @@ public class AddStudent
 			{
 				
 				System.out.println("Pick a Student to Delete: ");
-				// lists students
+				listStudents();
 				
-				System.out.println();
-				System.out.println("Are you sure you want to delete " + Student.roster.getFirstName.get() + " (1) Yes (2) No" );
-				int delete = userInput.nextInt();
-				if(delete == 1) {
-					// deletes
+//				System.out.println();
+//				System.out.println("Are you sure you want to delete " + Roster.roster.get(0).getFirstName() + " (1) Yes (2) No" );
+//				int delete = userInput.nextInt();
+//				if(delete == 1) {
+//					Roster.roster.remove(0);
+//				}
+//				else if(delete == 2) {
+//					
+//					System.out.println(Roster.roster.get(0).getFirstName() + " will not be deleted.");
+//					
+//				}
+//				else {
+//					deleteStudent();
+//				}
+			}
+
+		private static void listStudents()
+			{
+				for(int i = 0; i < Roster.roster.size(); i++) {
+					System.out.println(Roster.roster.get(i).getFirstName() + Roster.roster.get(i).getLastName() + Roster.roster.get(i).getGpa() + "  " +
+							Roster.roster.get(i).getFirstPeriod() + Roster.roster.get(i).getFirstPeriodGrade() + Roster.roster.get(i).getSecondPeriod() +
+							Roster.roster.get(i).getSecondPeriodGrade() + Roster.roster.get(i).getThirdPeriod() + Roster.roster.get(i).getThirdPeriodGrade());
 				}
-				else if(delete == 2) {
-					
-					//Return
-				}
-				else {
-					deleteStudent();
-				}
+				
 			}
 
 		public static void addStudent() {
@@ -63,7 +74,8 @@ public class AddStudent
 			System.out.print("Period Three Grade: ");
 			String periodThreeGrade = userInput.nextLine();
 			
-			Student.roster.add(new Student(firstName,lastName,periodOne,periodOneGrade,periodTwo,periodTwoGrade,periodThree,periodThreeGrade));
+			// GPA add 
+			//Roster.roster.add(new Student(firstName,lastName,periodOne,periodOneGrade,periodTwo,periodTwoGrade,periodThree,periodThreeGrade));
 			
 			
 			System.out.println();
@@ -80,13 +92,13 @@ public class AddStudent
 			int adding = userIntput1.nextInt();
 			if(adding == 1) {
 				
-				System.out.println(Student.roster.getFirstName( + Student.roster.getLastName() + " has been added to the roster."));
+				//System.out.println(Roster.roster.getFirstName( + Roster.roster.getgetLastName() + " has been added to the roster."));
 				
 			}
 			else if(adding == 2) {
 				
-				int last = Student.roster.size();
-				Student.roaster.remove(last);
+				int last = Roster.roster.size();
+				Roster.roster.remove(last);
 				
 			}
 			else {

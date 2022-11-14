@@ -15,7 +15,7 @@ public class SISRunner
 			
 			if(number == 1)
 				{
-					//add/delete
+					AddStudent.menu();
 				}
 			else if (number == 2)
 				{
