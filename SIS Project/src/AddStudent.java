@@ -14,7 +14,9 @@ public class AddStudent
 		
 		public static void menu() throws IOException {
 			
-			System.out.println("Would you like to (1) add or (2) delete a student?");
+			System.out.println("Add/Delete Students");
+			System.out.println("1) Add");
+			System.out.println("2) Delete");
 			int input = userInput.nextInt();
 			if(input == 1) {
 				addStudent();

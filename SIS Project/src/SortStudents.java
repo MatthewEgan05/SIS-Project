@@ -42,8 +42,7 @@ public class SortStudents
 			Roster.roster.get(i).getGpa() + "   " + Roster.roster.get(i).getFirstPeriod() + " " + Roster.roster.get(i).getFirstPeriodGrade() + "   " + Roster.roster.get(i).getSecondPeriod() + " " + 
 					Roster.roster.get(i).getFirstPeriodGrade() + "   " + Roster.roster.get(i).getThirdPeriod() + " " + Roster.roster.get(i).getThirdPeriodGrade());	
 			}
-			
-			
+		
 			
 			}
 		

@@ -7,7 +7,7 @@ public class ChangeStudent
 			{
 				int choice=0;
 				System.out.println("What do you want to change");
-				System.out.println("(1) Grade");
+				System.out.println("1) Grade");
 				System.out.println("What do you want to change");
 				if(choice==1)
 					{
